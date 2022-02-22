@@ -27,10 +27,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         System.out.println(s);
         User user = userService.getUser(s);
         System.out.println(user);
-//        user.getAuthorities().size();
-//        if(user == null) {
-//            throw new UsernameNotFoundException(String.format("User '%s' not found", s));
-//        }
         return user;
     }
 }
